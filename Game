@@ -1,0 +1,21 @@
+#include <ncurses.h>
+#include <iostream>
+using namespace std;
+
+int main(){
+    initscr();			
+	printw("Masukan Nama : ");
+	char a[256];
+	getstr(a);
+	printw("NPM          : ");
+	char b[256];
+	getstr(b);
+	cout << "==========================================" << endl;
+	cout << "Nama : " << a << endl;
+	cout << "NPM  : " << b << endl;
+	refresh();			
+	getch();			
+	endwin();			
+
+	return 0;
+}
